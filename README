@@ -1,0 +1,28 @@
+This is a very primitive Twitter API Proxy running on Google App Engine.
+
+It simply acts as a forwarder and does not try to interpret or parse
+specific api commands.
+
+Supported API:
+RESTful API Methods @ http://apiwiki.twitter.com/Twitter-API-Documentation
+
+Not Supported API:
+Search API Methods @ http://apiwiki.twitter.com/Twitter-API-Documentation
+
+
+We can actually add a hack for search api but seldom clients has a
+seperate url setting for search api.  So it's not particularly usable.
+Twitter.com will merge Search and REST API one day and things would become
+easier both for you and for me.
+
+LICENSE: Beerware License  http://en.wikipedia.org/wiki/Beerware
+
+/*
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE":
+ * <alecsk@gmail.com> wrote this. As long as you retain this notice you can do
+ * whatever you want with this stuff.  If we meet some day, and you think this
+ * stuff is worth it, you can buy me a beer in return Alecs King
+ * ----------------------------------------------------------------------------
+ */
+
