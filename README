@@ -13,7 +13,7 @@ How to use it with your twitter clients:
 
     Change the base API URL to:
         http://retwite.appspot.com
-	or
+        or
         https://retwite.appspot.com
 
     Change the search API URL to:
