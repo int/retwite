@@ -5,8 +5,12 @@ from google.appengine.api.urlfetch import fetch
 
 class Twitter(webapp.RequestHandler):
     def doit(self, method):
-        p = re.compile(r'retwite.appspot.com')
-        url = p.sub('twitter.com', self.request.url, 1)
+        p = re.compile(r'retwite.appspot.com/search/')
+        if p.search(self.request.url):
+            url = p.sub('search.twitter.com/', self.request.url, 1)
+        else:
+            p = re.compile(r'retwite.appspot.com')
+            url = p.sub('twitter.com', self.request.url, 1)
         r = fetch(url, self.request.body, method, self.request.headers)
         self.response.set_status(r.status_code)
         self.response.headers = r.headers

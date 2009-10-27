@@ -3,17 +3,21 @@ This is a very primitive Twitter API Proxy running on Google App Engine.
 It simply acts as a forwarder and does not try to interpret or parse
 specific api commands.
 
+
 Supported API:
-RESTful API Methods @ http://apiwiki.twitter.com/Twitter-API-Documentation
-
-Not Supported API:
-Search API Methods @ http://apiwiki.twitter.com/Twitter-API-Documentation
+RESTful and Search API Methods
+http://apiwiki.twitter.com/Twitter-API-Documentation
 
 
-We can actually add a hack for search api but seldom clients has a
-seperate url setting for search api.  So it's not particularly usable.
-Twitter.com will merge Search and REST API one day and things would become
-easier both for you and for me.
+How to use it with your twitter clients:
+
+    Change the base API URL to:
+        http://retwite.appspot.com
+	or
+        https://retwite.appspot.com
+
+    Change the search API URL to:
+        http://retwite.appspot.com/search
 
 LICENSE: Beerware License  http://en.wikipedia.org/wiki/Beerware
 
@@ -25,4 +29,3 @@ LICENSE: Beerware License  http://en.wikipedia.org/wiki/Beerware
  * stuff is worth it, you can buy me a beer in return Alecs King
  * ----------------------------------------------------------------------------
  */
-
